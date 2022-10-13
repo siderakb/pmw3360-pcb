@@ -7,9 +7,10 @@
   (paper "A4")
   (title_block
     (title "PMW3360 PCB")
-    (date "2022-10-13")
+    (date "2022-10-14")
     (rev "2.0")
     (comment 1 "PMW3360DM-T2QU optical mouse sensor breakout board")
+    (comment 2 "MIT License, Open Source Hardware")
   )
 
   (layers
