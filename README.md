@@ -27,7 +27,7 @@
 | R4*    | *Adj_R2*        | SMD 0603       | 1   |
 | U1     | PMW3360DM-T2QU  | PMW3360DM-T2QU | 1   |
 | U2*    | TPS73601DBV     | SOT-23-5       | 1   |
-| J1     | Connector Pin   | 2.54mm 1*8P    | 1   |
+| J1     | Pin Connector   | 2.54mm 1*8P    | 1   |
 | JP1    | Solder Jumper   | 1.0*1.5mm      | 1   |
 | TP1*   | V_IO Test Point | D1.5mm         | 1   |
 | TP2*   | V_DD Test Point | D1.5mm         | 1   |
@@ -36,7 +36,7 @@
 >   - For 1.8V V_DD, R3=28.0kΩ and R4=56.2kΩ.
 >   - R3 and R4 are not necessary if you have fixed voltage LDO on U2.
 > - V_DD range: 1.8\~2.1V, Typ. 1.9V.
-> - V_IO range: 1.8\~3.6V, Type. 1.9V, must be same or greater than V_DD.
+> - V_IO range: 1.8\~3.6V, Typ. 1.9V, must be same or greater than V_DD.
 
 ## Jumper Config
 
