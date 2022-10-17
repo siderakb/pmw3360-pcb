@@ -9,29 +9,29 @@
 
 | Front                                     | Back                                     |                                      |
 | ----------------------------------------- | ---------------------------------------- | ------------------------------------ |
-| ![front](https://i.imgur.com/YNuyznL.png) | ![back](https://i.imgur.com/ay0Sjee.png) | ![](https://i.imgur.com/O2wRAaS.png) |
+| ![front](https://i.imgur.com/eC6rQCU.jpg) | ![back](https://i.imgur.com/R6FjmGU.jpg) | ![](https://i.imgur.com/ATaLw1g.jpg) |
 
-![sch](https://i.imgur.com/fngHbs6.jpg)
+Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic and Gerber files.
 
 ## BOM
 
-| Ref(s) | Value           | Footprint      | Qty |
-| ------ | --------------- | -------------- | --- |
-| C1     | 4.7uF/10V       | SMD 0603       | 1   |
-| C2     | 100nF           | SMD 0603       | 1   |
-| C3     | 1uF             | SMD 0603       | 1   |
-| C4     | 4.7uF           | SMD 0603       | 1   |
-| R1     | 39R             | SMD 0603       | 1   |
-| R2     | 10k             | SMD 0603       | 1   |
-| R3*    | *Adj_R1*        | SMD 0603       | 1   |
-| R4*    | *Adj_R2*        | SMD 0603       | 1   |
-| U1     | PMW3360DM-T2QU  | PMW3360DM-T2QU | 1   |
-| U2*    | TPS73601DBV     | SOT-23-5       | 1   |
-| J1     | Pin Connector   | 2.54mm 1*8P    | 1   |
-| JP1    | Solder Jumper   | 1.0*1.5mm      | 1   |
-| TP1*   | V_IO Test Point | D1.5mm         | 1   |
-| TP2*   | V_DD Test Point | D1.5mm         | 1   |
-| TP3    | GND Test Point  | D1.5mm         | 1   |
+| Ref(s) | Value           | Footprint              |
+| ------ | --------------- | ---------------------- |
+| C1     | 4.7uF/10V       | SMD 0603 (1608 Metric) |
+| C2     | 100nF           | SMD 0603 (1608 Metric) |
+| C3     | 1uF             | SMD 0603 (1608 Metric) |
+| C4     | 4.7uF           | SMD 0603 (1608 Metric) |
+| R1     | 39R             | SMD 0603 (1608 Metric) |
+| R2     | 10k             | SMD 0603 (1608 Metric) |
+| R3\*   | *Adj_R1*        | SMD 0603 (1608 Metric) |
+| R4\*   | *Adj_R2*        | SMD 0603 (1608 Metric) |
+| U1     | PMW3360DM-T2QU  | PMW3360DM-T2QU 16 Pin  |
+| U2\*   | TPS73601DBV     | SOT-23-5               |
+| J1     | Pin Connector   | 2.54mm 1*8P            |
+| JP1    | Solder Jumper   | 1.0*1.5mm              |
+| TP1\*  | V_IO Test Point | D1.5mm                 |
+| TP2\*  | V_DD Test Point | D1.5mm                 |
+| TP3    | GND Test Point  | D1.5mm                 |
 > - Adjust the V_DD voltage with the value of R3 and R4.
 >   - For 1.8V V_DD, R3=28.0kΩ and R4=56.2kΩ.
 >   - R3 and R4 are not necessary if you have fixed voltage LDO on U2.
