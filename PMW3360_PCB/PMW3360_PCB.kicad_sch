@@ -6,8 +6,8 @@
 
   (title_block
     (title "PMW3360 PCB")
-    (date "2022-10-14")
-    (rev "2.0")
+    (date "2022-10-17")
+    (rev "2.1")
     (comment 1 "PMW3360DM-T2QU optical mouse sensor breakout board")
     (comment 2 "MIT License, Open Source Hardware")
   )
@@ -942,7 +942,7 @@
     (property "Reference" "TP1" (id 0) (at 210.82 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "VDDIO TestPoint" (id 1) (at 217.17 78.74 0)
+    (property "Value" "VIO TestPoint" (id 1) (at 217.17 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (id 2) (at 204.47 69.85 0)
@@ -959,7 +959,7 @@
     (uuid 4e369f56-4caf-4dde-9d82-7f50a5c4373c)
     (property "Reference" "U1" (id 0) (at 104.14 59.69 0))
     (property "Value" "PMW3360DM-T2QU" (id 1) (at 111.76 83.82 0))
-    (property "Footprint" "PMW3360_PCB:16pin‐DIP(PMW3360DM-T2QU)" (id 2) (at 105.41 69.85 0)
+    (property "Footprint" "PMW3360_PCB:PMW3360DM-T2QU 16Pin" (id 2) (at 105.41 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 105.41 69.85 0)
@@ -1413,7 +1413,7 @@
       (reference "R4") (unit 1) (value "Adj_R2") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/492ff555-b5b4-427f-8264-7208174413ab"
-      (reference "TP1") (unit 1) (value "VDDIO TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+      (reference "TP1") (unit 1) (value "VIO TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
     )
     (path "/2b2454b4-a75e-470e-b3d6-7aecc9f1ad03"
       (reference "TP2") (unit 1) (value "VDD TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
@@ -1422,7 +1422,7 @@
       (reference "TP3") (unit 1) (value "GND TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
     )
     (path "/4e369f56-4caf-4dde-9d82-7f50a5c4373c"
-      (reference "U1") (unit 1) (value "PMW3360DM-T2QU") (footprint "PMW3360_PCB:16pin‐DIP(PMW3360DM-T2QU)")
+      (reference "U1") (unit 1) (value "PMW3360DM-T2QU") (footprint "PMW3360_PCB:PMW3360DM-T2QU 16Pin")
     )
     (path "/983f3216-a047-41a8-9fa2-233d2d094141"
       (reference "U2") (unit 1) (value "TPS73601DBV") (footprint "Package_TO_SOT_SMD:SOT-23-5")
