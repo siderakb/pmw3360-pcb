@@ -1,7 +1,7 @@
 # PMW3360 PCB 
 [PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board.
 
-[Demo video (Rev 1.0)](https://youtu.be/X6r8fS4WcTc)
+[Demo video (Rev 2.1)](https://youtu.be/orrze81mV_8?t=312)
 
 > EDA: [KiCad](https://www.kicad.org/)
 
