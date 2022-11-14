@@ -3,7 +3,8 @@
 
 [Demo video (Rev 2.1)](https://youtu.be/orrze81mV_8?t=312)
 
-> EDA: [KiCad](https://www.kicad.org/)
+> A part of [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard).  
+> EDA: KiCad.
 
 ## Preview
 
