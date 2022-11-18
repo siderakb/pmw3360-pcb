@@ -44,3 +44,8 @@ Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic an
 - JP1: V_IO voltage selection
   - \[1-2 3\]: V_IO=V_IN
   - \[1 2-3\]: V_IO=V_DD
+  
+## Firmware
+
+- [QMK example](https://github.com/ziteh/ergo-snm-keyboard-qmk/tree/main/qmk/pmw3360_test)
+- [nRF Connect SDK (NCS) example](https://github.com/ziteh/ergo-snm-keyboard-qmk/tree/main/nrf/pmw3360)
