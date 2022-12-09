@@ -3,6 +3,8 @@
 
 [Demo video (Rev 2.1)](https://youtu.be/orrze81mV_8?t=312)
 
+Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic and Gerber files.
+
 > A part of [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard).  
 > EDA: KiCad.
 
@@ -12,7 +14,10 @@
 | ----------------------------------------- | ---------------------------------------- | ------------------------------------ |
 | ![front](https://i.imgur.com/eC6rQCU.jpg) | ![back](https://i.imgur.com/R6FjmGU.jpg) | ![](https://i.imgur.com/ATaLw1g.jpg) |
 
-Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic and Gerber files.
+- V_DD range: 1.8\~2.1V, Typ. 1.9V.
+- V_IO range: 1.8\~3.6V, Typ. 1.9V, must be same or greater than V_DD.
+
+> NRESET pin has a built in weak pull up circuit.
 
 ## BOM
 
@@ -33,11 +38,9 @@ Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic an
 | TP1\*  | V_IO Test Point | D1.5mm                 |
 | TP2\*  | V_DD Test Point | D1.5mm                 |
 | TP3    | GND Test Point  | D1.5mm                 |
-> - Adjust the V_DD voltage with the value of R3 and R4.
->   - For 1.8V V_DD, R3=28.0kΩ and R4=56.2kΩ.
->   - R3 and R4 are not necessary if you have fixed voltage LDO on U2.
-> - V_DD range: 1.8\~2.1V, Typ. 1.9V.
-> - V_IO range: 1.8\~3.6V, Typ. 1.9V, must be same or greater than V_DD.
+- Adjust the V_DD voltage with the value of R3 and R4.
+  - For 1.8V V_DD, R3=28.0kΩ and R4=56.2kΩ.
+  - R3 and R4 are not necessary if you have fixed voltage LDO on U2.
 
 ## Jumper Config
 
