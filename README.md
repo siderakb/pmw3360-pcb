@@ -5,7 +5,7 @@
 
 Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic and Gerber files.
 
-> A part of [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard).  
+> A part of [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard) project.  
 > EDA: KiCad.
 
 ## Preview
