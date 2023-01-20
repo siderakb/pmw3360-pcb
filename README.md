@@ -18,6 +18,8 @@ Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic an
 - V_DD (i.e. VDD of PMW3360) range: 1.8\~2.1V, Typ. 1.9V.
 - V_IO (i.e. VDDIO of PMW3360) range: 1.8\~3.6V, Typ. 1.9V, must be same or greater than V_DD.
 
+If you want it to work with a 3.3V MCU, then connect V_IN to 3.3\~5.5V (depends on LDO input range), and connect `1` and `2` pads of JP1 with solder let V_IO=V_IN.
+
 > NRESET pin of PMW3360 has a built in weak pull up circuit.
 
 ## BOM
