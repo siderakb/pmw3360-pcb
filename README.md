@@ -14,10 +14,11 @@ Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic an
 | ----------------------------------------- | ---------------------------------------- | ------------------------------------ |
 | ![front](https://i.imgur.com/eC6rQCU.jpg) | ![back](https://i.imgur.com/R6FjmGU.jpg) | ![](https://i.imgur.com/ATaLw1g.jpg) |
 
-- V_DD range: 1.8\~2.1V, Typ. 1.9V.
-- V_IO range: 1.8\~3.6V, Typ. 1.9V, must be same or greater than V_DD.
+- V_IO range: 2.0\~5.5V, must be same or greater then V_DD+0.2V. Depends on LDO specs and JP1 config.
+- V_DD (i.e. VDD of PMW3360) range: 1.8\~2.1V, Typ. 1.9V.
+- V_IO (i.e. VDDIO of PMW3360) range: 1.8\~3.6V, Typ. 1.9V, must be same or greater than V_DD.
 
-> NRESET pin has a built in weak pull up circuit.
+> NRESET pin of PMW3360 has a built in weak pull up circuit.
 
 ## BOM
 
@@ -40,7 +41,7 @@ Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic an
 | TP3    | GND Test Point  | D1.5mm                 |
 - Adjust the V_DD voltage with the value of R3 and R4.
   - For 1.8V V_DD, R3=28.0kΩ and R4=56.2kΩ.
-  - R3 and R4 are not necessary if you have fixed voltage LDO on U2.
+- U2 LDO can be replace by RT9193-18GB, just change C3 and C4 to 1uF, change R4 to a 22nF or larger ceramic capacitor, and R3 don't install.
 
 ## Jumper Config
 
