@@ -14,9 +14,9 @@ Go to [Releases](https://github.com/ziteh/pmw3360-pcb/releases) for schematic an
 | ----------------------------------------- | ---------------------------------------- | ------------------------------------ |
 | ![front](https://i.imgur.com/eC6rQCU.jpg) | ![back](https://i.imgur.com/R6FjmGU.jpg) | ![](https://i.imgur.com/ATaLw1g.jpg) |
 
-- V_IN range: 2.0\~5.5V, must be same or greater then V_DD+0.2V. Depends on LDO specs and JP1 config.
+- V_IN range: 2.0\~5.5V. Must be same or greater then V_DD+0.2V, depends on LDO specs and JP1 config.
 - V_DD (i.e. VDD of PMW3360) range: 1.8\~2.1V, Typ. 1.9V.
-- V_IO (i.e. VDDIO of PMW3360) range: 1.8\~3.6V, Typ. 1.9V, must be same or greater than V_DD.
+- V_IO (i.e. VDDIO of PMW3360) range: 1.8\~3.6V, Typ. 1.9V. Must be same or greater than V_DD.
 
 If you want it to work with a 3.3V MCU, then connect V_IN to 3.3V, and connect `1` and `2` pads of JP1 with solder let V_IO=V_IN.
 
