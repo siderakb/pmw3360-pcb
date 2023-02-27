@@ -16,7 +16,7 @@
 | ![front](https://i.imgur.com/OyAF7rm.jpg) | ![back](https://i.imgur.com/2qvz6Kv.jpg) | ![](https://i.imgur.com/r5hJnPY.jpg) |
 
 > `Rev 3.X` is designed to be used with [ErgoSNM `Rev 2.X`](https://github.com/ziteh/ergo-snm-keyboard/releases/tag/v2.0.0).  
-> If you want ***2.54mm pin header*** instead of JST GH 1.25 connector, please refer to [`Rev 2.1`](https://github.com/ziteh/pmw3360-pcb/releases/tag/v2.1.0).
+> If you want ***2.54mm pin header*** instead of FPC connector, please refer to [`Rev 2.1`](https://github.com/ziteh/pmw3360-pcb/releases/tag/v2.1.0).
 
 - V_IN range: 2.0\~5.5V. Must be same or greater then V_DD+0.2V, depends on LDO specs and JP1 config.
 - V_DD (i.e. VDD of PMW3360) range: 1.8\~2.1V, Typ. 1.9V.
