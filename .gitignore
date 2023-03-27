@@ -30,3 +30,7 @@ fp-info-cache
 *-backups/
 
 *-lib-table
+
+# JLCPCB tool
+jlcpcb/
+*.zip
