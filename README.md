@@ -1,6 +1,8 @@
 # PMW3360 PCB
 
-<a href="https://i.imgur.com/dnOzjEC.jpg"><img src="https://i.imgur.com/dnOzjEC.jpg" width="300"></a>  
+|2.54mm Pin Header|0.5mm FPC|
+|-|-|
+|<a href="https://i.imgur.com/dnOzjEC.jpg"><img src="https://i.imgur.com/dnOzjEC.jpg" width="300"></a>|<a href="https://i.imgur.com/n6hp9wy.jpg"><img src="https://i.imgur.com/n6hp9wy.jpg" width="300"></a>|
 
 [PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board. Support 1.8V or 3.3V.
 
