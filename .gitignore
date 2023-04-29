@@ -7,13 +7,14 @@
 *.bck
 *.kicad_pcb-bak
 *.sch-bak
+*.kicad_sch-bak
 *~
 _autosave-*
+\#auto_saved_files\#
 *.tmp
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
-\#auto_saved_files#
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -24,12 +25,16 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
 
+# Exported Gerber
 [Gg]erber/
-*-backups/
+*.g[tb][lops]
+*.gbr
+*.gm1
+*.drl
 
-*-lib-table
+# Backup
+*-backups/
 
 # JLCPCB tool
 jlcpcb/
