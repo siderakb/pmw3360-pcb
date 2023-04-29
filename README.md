@@ -62,7 +62,7 @@ If you want it to work with a 3.3V MCU, then connect V_IN to 3.3V, and connect `
 - Plated board edge: No
 - Edge card connectors: No
   
-## Firmware
+## Firmware Examples
 
-- [QMK example](https://github.com/ziteh/ergo-snm-keyboard-qmk/tree/main/qmk/pmw3360_test)
-- [nRF Connect SDK (NCS) example](https://github.com/ziteh/ergo-snm-keyboard-qmk/tree/main/nrf/pmw3360)
+- [QMK](/firmware/qmk/pmw3360_test/)
+- [nRF Connect SDK (NCS)](/firmware/nordic/)
