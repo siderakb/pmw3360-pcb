@@ -8,7 +8,7 @@
 
 [Demo video (Rev 2.1)](https://youtu.be/orrze81mV_8?t=312)
 
-> A part of [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard) project.  
+> A part of [ErgoSNM keyboard](https://github.com/siderakb/ergo-snm-keyboard) project.  
 > EDA: KiCad.
 
 ## Preview
@@ -17,7 +17,7 @@
 | ----------------------------------------- | ---------------------------------------- | ------------------------------------ |
 | ![front](https://i.imgur.com/OyAF7rm.jpg) | ![back](https://i.imgur.com/2qvz6Kv.jpg) | ![](https://i.imgur.com/r5hJnPY.jpg) |
 
-🚩**NOTE**: `Rev 3.X` is designed to be used with [ErgoSNM](https://github.com/ziteh/ergo-snm-keyboard/releases/tag/v2.0.0), if you prefer ***2.54mm pin header*** instead of FPC connector, please refer to [`Rev 2.1`](https://github.com/ziteh/pmw3360-pcb/releases/tag/v2.1.0).
+🚩**NOTE**: `Rev 3.X` is designed to be used with [ErgoSNM](https://github.com/siderakb/ergo-snm-keyboard/releases/tag/v2.0.0), if you prefer ***2.54mm pin header*** instead of FPC connector, please refer to [`Rev 2.1`](https://github.com/siderakb/pmw3360-pcb/releases/tag/v2.1.0).
 
 - V_IN range: 2.0\~5.5V. Must be same or greater then V_DD+0.2V, depends on LDO specs and JP1 config.
 - V_DD (i.e. VDD of PMW3360) range: 1.8\~2.1V, Typ. 1.9V.
