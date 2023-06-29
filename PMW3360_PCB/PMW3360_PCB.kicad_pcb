@@ -9,8 +9,9 @@
     (title "PMW3360 PCB")
     (rev "3.2")
     (company "SideraKB")
-    (comment 1 "PMW3360DM-T2QU optical mouse sensor breakout board")
-    (comment 2 "MIT License (Open Source Hardware)")
+    (comment 1 "MIT License (Open Source Hardware)")
+    (comment 2 "PMW3360DM-T2QU optical mouse sensor breakout board")
+    (comment 3 "FFC/FPC Connector")
   )
 
   (layers
@@ -2170,7 +2171,7 @@
   (segment (start 160.528 87.8288) (end 160.528 86.7848) (width 0.25) (layer "F.Cu") (net 2) (tstamp d198f936-07f7-4390-ae60-d9fcbfa2c80c))
   (via (at 157.3955 94.8738) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 2) (tstamp 068b97ed-037b-4672-b22b-7e25154a7bdb))
   (via (at 140.239 94.0738) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 2) (tstamp 0dcd5518-7186-4888-81a4-b51dc5711001))
-  (via (at 136.839 91.0738) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 2) (tstamp 17d8f9fa-100a-4bae-85c9-ad92691fed92))
+  (via (at 136.839 89.8238) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 2) (tstamp 17d8f9fa-100a-4bae-85c9-ad92691fed92))
   (via (at 157.039 97.4738) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 2) (tstamp 193ad894-18a8-4624-90a2-103dc29e6142))
   (via (at 159.864 92.0988) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 2) (tstamp 4d7276a3-96d0-471b-98e3-abe450c1c5c0))
   (via (at 139.139 92.5738) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 2) (tstamp 8b731bb2-8486-42d2-be78-be48c70fa926))

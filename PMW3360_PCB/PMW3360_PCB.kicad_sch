@@ -8,8 +8,9 @@
     (title "PMW3360 PCB")
     (rev "3.2")
     (company "SideraKB")
-    (comment 1 "PMW3360DM-T2QU optical mouse sensor breakout board")
-    (comment 2 "MIT License (Open Source Hardware)")
+    (comment 1 "MIT License (Open Source Hardware)")
+    (comment 2 "PMW3360DM-T2QU optical mouse sensor breakout board")
+    (comment 3 "FFC/FPC Connector")
   )
 
   (lib_symbols
