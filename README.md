@@ -12,12 +12,14 @@
 
 ## PCB
 
-![Schematic](https://i.imgur.com/Yu6TUAT.png)
+Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fsiderakb%2Fpmw3360-pcb%2Ftree%2Fmain%2Fpmw3360_pcb_ffc), powered by [KiCanvas](https://kicanvas.org/).
 
 3 connector editions are available:
 - 2.54mm pin header: [`pmw3360_pcb_pinheader/`](/pmw3360_pcb_pinheader/)
 - JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
 - 0.5mm FFC/FPC: [`pmw3360_pcb_ffc/`](/pmw3360_pcb_ffc/)
+
+![Schematic](https://i.imgur.com/Yu6TUAT.png)
 
 ### BOM
 
@@ -35,9 +37,9 @@
 | U1   | PMW3360DM-T2QU | PMW3360DM-T2QU 16 Pin  |
 | U2\* | TPS73601DBV    | SOT-23-5               |
 
+- R1 is optional/additional RESET pull up resistor, RESET pin of PMW3360 has a built in weak pull up circuit.
 - Adjust the VDD voltage with the value of R4 and R5. In the above case, VDD is set to 1.8V.
 - U2 LDO can be replace by RT9193-18GB. To make replacement, change C4 to 1uF, change R5 to a 22nF or larger ceramic capacitor, and don't install R4.
-- R1 is optional/additional RESET pull up resistor, RESET pin of PMW3360 has a built in weak pull up circuit.
 
 ## Power
 
