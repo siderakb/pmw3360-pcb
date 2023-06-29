@@ -8,7 +8,6 @@
 
 [Demo video (Rev 2.1)](https://youtu.be/orrze81mV_8?t=312)
 
-> A part of [ErgoSNM keyboard](https://github.com/siderakb/ergo-snm-keyboard) project.  
 > EDA: KiCad.
 
 ## Preview
@@ -66,3 +65,9 @@ If you want it to work with a 3.3V MCU, then connect V_IN to 3.3V, and connect `
 
 - [QMK](/firmware/qmk/pmw3360_test/)
 - [nRF Connect SDK (NCS)](/firmware/nordic/)
+
+## License
+
+- KiCad PCBs, footprints and symbols: [MIT](/LICENSE).
+- QMK firmware example: [GPL v2](/LICENSE_QMK).
+- NCS firmware example: [Nordic-5-Clause](/LICENSE_Nordic).
