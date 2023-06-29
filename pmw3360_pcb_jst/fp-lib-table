@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "PMW3360_PCB")(type "KiCad")(uri "${KIPRJMOD}/../pmw3360_pcb.pretty")(options "")(descr ""))
+)
