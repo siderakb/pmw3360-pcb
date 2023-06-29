@@ -8,7 +8,7 @@
   (title_block
     (title "PMW3360 PCB")
     (date "2023-06-29")
-    (rev "4.0")
+    (rev "J.0")
     (company "SideraKB")
     (comment 1 "MIT License, Open Source Hardware")
     (comment 2 "PMW3360DM-T2QU optical mouse sensor breakout board")
