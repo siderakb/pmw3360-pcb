@@ -19,7 +19,7 @@
 
 ## Changelog
 
-### [2.2.0] - 2023-06-29
+### [P.0.0] - 2023-06-29
 
 - Update connector pin order.
 - Changed mounting holes to NPTH.
