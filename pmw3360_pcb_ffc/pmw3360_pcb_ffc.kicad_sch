@@ -6,6 +6,7 @@
 
   (title_block
     (title "PMW3360 PCB")
+    (date "2023-06-29")
     (rev "3.2")
     (company "SideraKB")
     (comment 1 "MIT License (Open Source Hardware)")
@@ -971,7 +972,7 @@
   (symbol (lib_id "power:GND") (at 240.03 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 014ff978-f071-4cb7-bf90-84a86e94ae9a)
-    (property "Reference" "#PWR017" (at 240.03 100.33 0)
+    (property "Reference" "#PWR09" (at 240.03 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 240.03 97.79 0)
@@ -985,9 +986,9 @@
     )
     (pin "1" (uuid 03fe83ee-4e26-40ff-b3f8-f31f5b3f7d04))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1011,7 +1012,7 @@
     (pin "1" (uuid 4183e483-2cf6-4797-8c37-2dc885896e40))
     (pin "2" (uuid 95aebefa-ce66-4b58-8c5f-22fe6218cc69))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "R2") (unit 1)
         )
@@ -1022,7 +1023,7 @@
   (symbol (lib_id "power:VDD") (at 151.13 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 125ae177-d92b-4ad2-94d6-ef49b033461d)
-    (property "Reference" "#PWR01" (at 151.13 127 0)
+    (property "Reference" "#PWR010" (at 151.13 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 151.13 119.38 0)
@@ -1036,9 +1037,9 @@
     )
     (pin "1" (uuid c5a436db-ec79-475b-8017-ca4d6d4792f9))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -1061,7 +1062,7 @@
     )
     (pin "1" (uuid 886da7f8-0d9f-4802-bf3b-85d78cd49b28))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "H2") (unit 1)
         )
@@ -1086,7 +1087,7 @@
     )
     (pin "1" (uuid bfadada3-d540-4ba1-80da-d035d1cae1c4))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "H1") (unit 1)
         )
@@ -1097,7 +1098,7 @@
   (symbol (lib_id "Device:R") (at 157.48 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 28f8c88f-01ad-471e-9a93-f9db13857860)
-    (property "Reference" "R3" (at 158.75 52.07 0)
+    (property "Reference" "R1" (at 158.75 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 158.75 54.61 0)
@@ -1112,9 +1113,9 @@
     (pin "1" (uuid 406a86b6-6890-4c62-a634-89649e789b47))
     (pin "2" (uuid b7ba8aae-8e9b-4bfe-9572-9da70728884d))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "R3") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -1137,7 +1138,7 @@
     )
     (pin "1" (uuid 43fd547e-8148-4aa8-a10e-e12705df1047))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "TP2") (unit 1)
         )
@@ -1148,7 +1149,7 @@
   (symbol (lib_id "power:GND") (at 83.82 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2f783eb8-5520-4549-ba8b-b000d9802fb9)
-    (property "Reference" "#PWR011" (at 83.82 140.97 0)
+    (property "Reference" "#PWR013" (at 83.82 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 138.43 0)
@@ -1162,9 +1163,9 @@
     )
     (pin "1" (uuid c0569745-20c0-4be1-b402-e1b7acf4f11f))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -1188,7 +1189,7 @@
     (pin "1" (uuid f9fe6f02-ec64-4fc7-95f3-ccb0f0c1a56a))
     (pin "2" (uuid 4b733529-bf85-48af-949c-60db99e27fdb))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "C4") (unit 1)
         )
@@ -1199,7 +1200,7 @@
   (symbol (lib_id "power:GND") (at 234.95 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42546715-416b-4775-a5d5-8ffdaa164ec8)
-    (property "Reference" "#PWR016" (at 234.95 100.33 0)
+    (property "Reference" "#PWR08" (at 234.95 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 97.79 0)
@@ -1213,9 +1214,9 @@
     )
     (pin "1" (uuid 7424ee4c-b060-4f45-aebb-cb01f91fe5be))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -1238,7 +1239,7 @@
     )
     (pin "1" (uuid ab5a5b6f-9010-4bcc-bfaa-e1827fe0d575))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "TP1") (unit 1)
         )
@@ -1278,7 +1279,7 @@
     (pin "8" (uuid 203b1c23-112a-444c-82d3-27417dea46d6))
     (pin "9" (uuid dc44b9c3-c5a0-4b2c-b9a4-555ec47e0c14))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "U1") (unit 1)
         )
@@ -1304,7 +1305,7 @@
     (pin "1" (uuid b73a189d-985b-4a69-bc6a-2c2a0bb2ed0f))
     (pin "2" (uuid e1ab18ae-6687-48c8-b85f-4d29ce18e493))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "R5") (unit 1)
         )
@@ -1329,7 +1330,7 @@
     )
     (pin "1" (uuid 0a186707-cc6d-48f2-9f20-749e4251018b))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "H4") (unit 1)
         )
@@ -1340,7 +1341,7 @@
   (symbol (lib_id "power:GND") (at 224.79 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e26f670-2187-4269-93b8-7786b2832ed1)
-    (property "Reference" "#PWR014" (at 224.79 100.33 0)
+    (property "Reference" "#PWR06" (at 224.79 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 224.79 97.79 0)
@@ -1354,9 +1355,9 @@
     )
     (pin "1" (uuid de1d3ffd-0e63-40e3-a024-47676718be5e))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1365,7 +1366,7 @@
   (symbol (lib_id "power:GND") (at 229.87 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 66cd7dc1-51f6-46bc-affc-145ec8112a54)
-    (property "Reference" "#PWR015" (at 229.87 100.33 0)
+    (property "Reference" "#PWR07" (at 229.87 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 229.87 97.79 0)
@@ -1379,9 +1380,9 @@
     )
     (pin "1" (uuid 72d6152f-c82b-45ce-807b-8d7a94370981))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -1405,7 +1406,7 @@
     (pin "1" (uuid 7603da7c-0e69-461c-ac49-39903ba7a63f))
     (pin "2" (uuid 6b00f27f-c5b4-4f05-85c8-86ec1255d344))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "C3") (unit 1)
         )
@@ -1431,7 +1432,7 @@
     (pin "1" (uuid 57ce7b17-e0c4-4433-9435-d8497e715d33))
     (pin "2" (uuid 468b841b-18c9-470b-bec1-1ee35f1fd0ae))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "C2") (unit 1)
         )
@@ -1457,7 +1458,7 @@
     (pin "1" (uuid 60e77384-b8f6-43e9-b44e-3bfe0c2a4af0))
     (pin "2" (uuid e3d204a0-f64f-4415-8e92-1f09aa8ac1d2))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "R4") (unit 1)
         )
@@ -1483,7 +1484,7 @@
     (pin "1" (uuid a8980972-0488-45d9-b280-5b02fd03742d))
     (pin "2" (uuid d6a522d4-7b7a-4a6f-814b-532717b74194))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "C1") (unit 1)
         )
@@ -1494,7 +1495,7 @@
   (symbol (lib_id "power:GND") (at 60.96 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 862391e8-b738-4b33-b11b-2fdea95a6903)
-    (property "Reference" "#PWR02" (at 60.96 90.17 0)
+    (property "Reference" "#PWR04" (at 60.96 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 60.96 87.63 0)
@@ -1508,9 +1509,9 @@
     )
     (pin "1" (uuid eb872067-e2a3-432c-8bb3-131a8d915a5c))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1519,7 +1520,7 @@
   (symbol (lib_id "power:GND") (at 116.84 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94bd7791-a1a5-4724-b498-d3a1f0efba07)
-    (property "Reference" "#PWR013" (at 116.84 140.97 0)
+    (property "Reference" "#PWR015" (at 116.84 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 138.43 0)
@@ -1533,9 +1534,9 @@
     )
     (pin "1" (uuid ac6f784c-adc9-4418-94b5-b22b61f52ed6))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -1562,7 +1563,7 @@
     (pin "4" (uuid 17a7974d-87ea-456b-8366-72f8ef009b52))
     (pin "5" (uuid 2c8fb007-5db2-4e2b-9a88-9b6f4807012e))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "U2") (unit 1)
         )
@@ -1587,7 +1588,7 @@
     )
     (pin "1" (uuid a256a22c-1936-4f37-b7d6-704217b05f28))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "#PWR05") (unit 1)
         )
@@ -1598,7 +1599,7 @@
   (symbol (lib_id "power:VDD") (at 232.41 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9b5635dd-785b-4aa2-9eb6-b83d781ce66a)
-    (property "Reference" "#PWR03" (at 232.41 64.77 0)
+    (property "Reference" "#PWR01" (at 232.41 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 232.41 57.15 0)
@@ -1612,9 +1613,9 @@
     )
     (pin "1" (uuid 502f5c0d-e4ce-4127-9f9e-800e4f592889))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -1623,7 +1624,7 @@
   (symbol (lib_id "Device:R") (at 123.19 72.39 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9cb85c35-2796-4752-8e20-45ca76c4661f)
-    (property "Reference" "R1" (at 124.46 69.85 90)
+    (property "Reference" "R3" (at 124.46 69.85 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "39R" (at 125.095 72.39 90)
@@ -1638,9 +1639,9 @@
     (pin "1" (uuid 8ccd4324-6b70-413d-b4a0-281f7085ab5b))
     (pin "2" (uuid 2a778ab3-05d4-4f0b-8c8e-abb91f5480ae))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "R1") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -1649,7 +1650,7 @@
   (symbol (lib_id "power:VDD") (at 119.38 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b1d7145e-3024-408d-8f16-6179b1861bbc)
-    (property "Reference" "#PWR018" (at 119.38 69.85 0)
+    (property "Reference" "#PWR03" (at 119.38 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 119.38 62.23 0)
@@ -1663,9 +1664,9 @@
     )
     (pin "1" (uuid f016ce5e-c510-4710-b226-54acff4264d5))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -1674,7 +1675,7 @@
   (symbol (lib_id "power:VDD") (at 116.84 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7fa6939-b913-4577-8bad-51a0a3af856a)
-    (property "Reference" "#PWR08" (at 116.84 128.27 0)
+    (property "Reference" "#PWR011" (at 116.84 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 116.84 120.65 0)
@@ -1688,9 +1689,9 @@
     )
     (pin "1" (uuid 84ab23d9-04f5-48b6-b892-a93706551529))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -1699,7 +1700,7 @@
   (symbol (lib_id "power:GND") (at 67.31 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d5ee9f2e-b963-41ce-9583-b639972cd29f)
-    (property "Reference" "#PWR010" (at 67.31 140.97 0)
+    (property "Reference" "#PWR012" (at 67.31 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 67.31 138.43 0)
@@ -1713,9 +1714,9 @@
     )
     (pin "1" (uuid 1875b128-ede3-44b8-87b8-e6cb172e496b))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -1740,7 +1741,7 @@
     (pin "2" (uuid c297e12e-1e7a-4526-bc8c-fcceec98cd3c))
     (pin "3" (uuid 75f51c8e-dc56-4e96-bb6a-8bc0f40b5f4e))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "JP1") (unit 1)
         )
@@ -1772,7 +1773,7 @@
     (pin "7" (uuid 42530699-35ac-4cfe-872a-918a36d4e4b5))
     (pin "8" (uuid 8b7d12aa-1423-4d60-ad57-febab311fb41))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "J1") (unit 1)
         )
@@ -1783,7 +1784,7 @@
   (symbol (lib_id "power:GND") (at 245.11 60.96 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e105ac0e-3c16-494e-97d1-393fdb9e229a)
-    (property "Reference" "#PWR06" (at 245.11 54.61 0)
+    (property "Reference" "#PWR02" (at 245.11 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 245.11 57.15 0)
@@ -1797,9 +1798,9 @@
     )
     (pin "1" (uuid 2017873c-93fa-4aaf-afbf-48d0f47556fe))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -1808,7 +1809,7 @@
   (symbol (lib_id "power:GND") (at 95.25 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e53eb2ea-a214-4c57-9a59-cec45c9d4b20)
-    (property "Reference" "#PWR012" (at 95.25 140.97 0)
+    (property "Reference" "#PWR014" (at 95.25 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 95.25 138.43 0)
@@ -1822,9 +1823,9 @@
     )
     (pin "1" (uuid ee0d8cfb-53f8-4b9d-98a9-3887dfaa43d8))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -1847,7 +1848,7 @@
     )
     (pin "1" (uuid b8c2a467-5036-43f9-b284-e1fb1dc8186c))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "TP3") (unit 1)
         )
@@ -1872,7 +1873,7 @@
     )
     (pin "1" (uuid 4c95a718-58e5-4d7a-9ac5-9be5ccc2a99d))
     (instances
-      (project "PMW3360_PCB"
+      (project "pmw3360_pcb_ffc"
         (path "/45d2ba16-f6c4-413f-a27a-bb6cd0965582"
           (reference "H3") (unit 1)
         )

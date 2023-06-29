@@ -36,7 +36,7 @@
 | U2\* | TPS73601DBV    | SOT-23-5               |
 
 - Adjust the VDD voltage with the value of R4 and R5. In the above case, VDD is set to 1.8V.
-- U2 LDO can be replace by RT9193-18GB. To make replacement, change C3 and C4 to 1uF, change R5 to a 22nF or larger ceramic capacitor, and don't install R4.
+- U2 LDO can be replace by RT9193-18GB. To make replacement, change C4 to 1uF, change R5 to a 22nF or larger ceramic capacitor, and don't install R4.
 - R1 is optional/additional RESET pull up resistor, RESET pin of PMW3360 has a built in weak pull up circuit.
 
 ## Power
@@ -48,8 +48,8 @@ For 1.8V MCU, please connect VIN to 2.0\~5.5V, solder and connect the 2 and 3 pa
 ### Voltage Range
 
 - **VIN**: 2.0\~5.5V. Must be same or greater then VDD+0.2V, depends on LDO specs and JP1 config.
-- **VDD**: 1.8\~2.1V, Typ. 1.9V.
-- **VIO**: 1.8\~3.6V, Typ. 1.9V. Must be same or greater than VDD.
+- **VDD**: 1.8\~2.1V, typical 1.9V.
+- **VIO**: 1.8\~3.6V, typical 1.9V. Must be same or greater than VDD.
 
 ### Jumper Config
 
@@ -65,6 +65,6 @@ For 1.8V MCU, please connect VIN to 2.0\~5.5V, solder and connect the 2 and 3 pa
 
 ## License
 
-- KiCad PCBs, footprints and symbols: [MIT](/LICENSE).
+- KiCad Files (e.g. schematics, PCBs, footprints and symbols): [MIT](/LICENSE).
 - `firmware/qmk/`: [GPL v2](/LICENSE_QMK).
 - `firmware/nordic/`: [Nordic-5-Clause](/LICENSE_Nordic).
