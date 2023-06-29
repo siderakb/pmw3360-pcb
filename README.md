@@ -1,66 +1,63 @@
 # PMW3360 PCB
 
-|2.54mm Pin Header|0.5mm FPC|
-|-|-|
-|<a href="https://i.imgur.com/dnOzjEC.jpg"><img src="https://i.imgur.com/dnOzjEC.jpg" width="300"></a>|<a href="https://i.imgur.com/n6hp9wy.jpg"><img src="https://i.imgur.com/n6hp9wy.jpg" width="300"></a>|
+| 2.54mm Pin Header                                                                                     | 0.5mm FFC/FPC                                                                                         |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| <a href="https://i.imgur.com/dnOzjEC.jpg"><img src="https://i.imgur.com/dnOzjEC.jpg" width="300"></a> | <a href="https://i.imgur.com/n6hp9wy.jpg"><img src="https://i.imgur.com/n6hp9wy.jpg" width="300"></a> |
 
-[PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board. Support 1.8V or 3.3V.
+[PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board, can be operated with either a 1.8V or 3.3V voltage level.
 
 [Demo video (Rev 2.1)](https://youtu.be/orrze81mV_8?t=312)
 
-> EDA: KiCad.
+> EDA: KiCad 7.
 
-## Preview
+## PCB
 
-| Front                                     | Back                                     | Layers                               |
-| ----------------------------------------- | ---------------------------------------- | ------------------------------------ |
-| ![front](https://i.imgur.com/OyAF7rm.jpg) | ![back](https://i.imgur.com/2qvz6Kv.jpg) | ![](https://i.imgur.com/r5hJnPY.jpg) |
+![Schematic](https://i.imgur.com/Yu6TUAT.png)
 
-🚩**NOTE**: `Rev 3.X` is designed to be used with [ErgoSNM](https://github.com/siderakb/ergo-snm-keyboard/releases/tag/v2.0.0), if you prefer ***2.54mm pin header*** instead of FPC connector, please refer to [`Rev 2.1`](https://github.com/siderakb/pmw3360-pcb/releases/tag/v2.1.0).
+3 connector editions are available:
+- 2.54mm pin header: [`pmw3360_pcb_pinheader/`](/pmw3360_pcb_pinheader/)
+- JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
+- 0.5mm FFC/FPC: [`pmw3360_pcb_FFC/`](/pmw3360_pcb_FFC/)
 
-- V_IN range: 2.0\~5.5V. Must be same or greater then V_DD+0.2V, depends on LDO specs and JP1 config.
-- V_DD (i.e. VDD of PMW3360) range: 1.8\~2.1V, Typ. 1.9V.
-- V_IO (i.e. VDDIO of PMW3360) range: 1.8\~3.6V, Typ. 1.9V. Must be same or greater than V_DD.
+### BOM
 
-If you want it to work with a 3.3V MCU, then connect V_IN to 3.3V, and connect `1` and `2` pads of JP1 with solder let V_IO=V_IN.
+| Ref  | Value          | Footprint              |
+| ---- | -------------- | ---------------------- |
+| C1   | 4.7uF/10V      | SMD 0603 (1608 Metric) |
+| C2   | 100nF          | SMD 0603 (1608 Metric) |
+| C3   | 1uF            | SMD 0603 (1608 Metric) |
+| C4   | 4.7uF          | SMD 0603 (1608 Metric) |
+| R1\* | *DNI* or 10k   | SMD 0603 (1608 Metric) |
+| R2   | 10k            | SMD 0603 (1608 Metric) |
+| R3   | 39R            | SMD 0603 (1608 Metric) |
+| R4\* | 28k            | SMD 0603 (1608 Metric) |
+| R5\* | 56.2k          | SMD 0603 (1608 Metric) |
+| U1   | PMW3360DM-T2QU | PMW3360DM-T2QU 16 Pin  |
+| U2\* | TPS73601DBV    | SOT-23-5               |
 
-## BOM
+- Adjust the VDD voltage with the value of R4 and R5. In the above case, VDD is set to 1.8V.
+- U2 LDO can be replace by RT9193-18GB. To make replacement, change C3 and C4 to 1uF, change R5 to a 22nF or larger ceramic capacitor, and don't install R4.
+- R1 is optional/additional RESET pull up resistor, RESET pin of PMW3360 has a built in weak pull up circuit.
 
-| Ref    | Value           | Footprint              |
-| ------ | --------------- | ---------------------- |
-| C1     | 4.7uF/10V       | SMD 0603 (1608 Metric) |
-| C2     | 100nF           | SMD 0603 (1608 Metric) |
-| C3     | 1uF             | SMD 0603 (1608 Metric) |
-| C4     | 4.7uF           | SMD 0603 (1608 Metric) |
-| R1     | 39R             | SMD 0603 (1608 Metric) |
-| R2     | 10k             | SMD 0603 (1608 Metric) |
-| R3\*   | *DNI* or 10k    | SMD 0603 (1608 Metric) |
-| R4\*   | *Adj_R1*        | SMD 0603 (1608 Metric) |
-| R5\*   | *Adj_R2*        | SMD 0603 (1608 Metric) |
-| U1     | PMW3360DM-T2QU  | PMW3360DM-T2QU 16 Pin  |
-| U2\*   | TPS73601DBV     | SOT-23-5               |
-| J1     | 0.5mm FPC 8P    | AFC01-S08FCA-00        |
+## Power
 
-- Adjust the V_DD voltage with the value of R4 and R5.
-  - For 1.8V V_DD, *Adj_R1*=28.0kΩ and *Adj_R2*=56.2kΩ.
-- U2 LDO can be replace by RT9193-18GB, just change C3 and C4 to 1uF, change R5 to a 22nF or larger ceramic capacitor, and R4 don't install.
-- R3 is optional/additional nRESET pull up resistor, nRESET pin of PMW3360 has a built in weak pull up circuit.
+If you want to use it with a 3.3V MCU, please connect VIN to the 3.3V power supply. Then, solder the 1 and 2 pads of JP1 together to set **VIO = VIN = 3.3V**.
 
-## Jumper Config
+For 1.8V MCU, please connect VIN to 2.0\~5.5V, solder and connect the 2 and 3 pads of JP1.
 
-- JP1: V_IO voltage selection
-  - 1 and 2 ON (close): V_IO = V_IN
-  - 3 and 2 ON (close): V_IO = V_DD
+### Voltage Range
 
-## PCB Characteristics
-- Copper layer count: 2
-- Board overall dimensions: 27 mm x 28 mm
-- Min track/spacing: 0.2 mm / 0.2 mm
-- Min hole diameter: 0.3 mm
-- Castellated pads: No
-- Plated board edge: No
-- Edge card connectors: No
-  
+- **VIN**: 2.0\~5.5V. Must be same or greater then VDD+0.2V, depends on LDO specs and JP1 config.
+- **VDD**: 1.8\~2.1V, Typ. 1.9V.
+- **VIO**: 1.8\~3.6V, Typ. 1.9V. Must be same or greater than VDD.
+
+### Jumper Config
+
+| JP1 Config          | Description                 |
+| ------------------- | --------------------------- |
+| 2 and 1 close, 3 NC | VIO = VIN                   |
+| 2 and 3 close, 1 NC | VIO = VDD (i.e. LDO output) |
+
 ## Firmware Examples
 
 - [QMK](/firmware/qmk/pmw3360_test/)
@@ -69,5 +66,5 @@ If you want it to work with a 3.3V MCU, then connect V_IN to 3.3V, and connect `
 ## License
 
 - KiCad PCBs, footprints and symbols: [MIT](/LICENSE).
-- QMK firmware example: [GPL v2](/LICENSE_QMK).
-- NCS firmware example: [Nordic-5-Clause](/LICENSE_Nordic).
+- `firmware/qmk/`: [GPL v2](/LICENSE_QMK).
+- `firmware/nordic/`: [Nordic-5-Clause](/LICENSE_Nordic).
