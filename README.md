@@ -17,7 +17,7 @@
 3 connector editions are available:
 - 2.54mm pin header: [`pmw3360_pcb_pinheader/`](/pmw3360_pcb_pinheader/)
 - JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
-- 0.5mm FFC/FPC: [`pmw3360_pcb_FFC/`](/pmw3360_pcb_FFC/)
+- 0.5mm FFC/FPC: [`pmw3360_pcb_FFC/`](/pmw3360_pcb_ffc/)
 
 ### BOM
 
