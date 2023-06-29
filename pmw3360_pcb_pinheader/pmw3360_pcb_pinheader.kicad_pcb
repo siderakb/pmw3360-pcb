@@ -2112,7 +2112,7 @@
   (gr_text "JP1:\n[1-2 3]V_{IO}=V_{IN}\n[1 2-3]V_{IO}=V_{DD}" (at 151.4895 105.7338) (layer "B.SilkS") (tstamp 4e78ac26-1b29-4743-89ce-b770bab09ad1)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
-  (gr_text "PMW3360 PCB\nRev 2.1" (at 149.939 79.2338) (layer "B.SilkS") (tstamp ed8bc3fe-91fe-4741-8ac8-67b0dc1e3994)
+  (gr_text "${TITLE}\nRev ${REVISION}" (at 149.939 79.2338) (layer "B.SilkS") (tstamp ed8bc3fe-91fe-4741-8ac8-67b0dc1e3994)
     (effects (font (size 1 1) (thickness 0.15)) (justify left top mirror))
   )
   (gr_text "MOSI" (at 137.039 91.7488 45) (layer "F.SilkS") (tstamp 3779b134-bd26-4e51-8e06-bec03a19e6aa)
