@@ -62,7 +62,9 @@ For 1.8V MCU, please connect VIN to 2.0\~5.5V, solder and connect the 2 and 3 pa
 
 ## Firmware Examples
 
-- [QMK](/firmware/qmk/pmw3360_test/)
+- QMK
+    - [RP2040](/firmware/qmk/pmw3360_rp2040/)
+    - [Pro Micro](/firmware/qmk/pmw3360_promicro/)
 - [nRF Connect SDK (NCS)](/firmware/nordic/)
 
 Pre-Build firmware can be found in [Releases](https://github.com/siderakb/pmw3360-pcb/releases/tag/fw_v0.1.0).

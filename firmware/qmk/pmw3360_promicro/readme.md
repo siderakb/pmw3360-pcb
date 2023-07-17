@@ -1,4 +1,4 @@
-# PMW3360-RP2040
+# PMW3360-Pro Micro
 
 [PMW3360 PCB](https://github.com/siderakb/pmw3360-pcb) QMK example Pro Micro edition.
 
