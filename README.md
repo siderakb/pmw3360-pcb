@@ -65,6 +65,8 @@ For 1.8V MCU, please connect VIN to 2.0\~5.5V, solder and connect the 2 and 3 pa
 - [QMK](/firmware/qmk/pmw3360_test/)
 - [nRF Connect SDK (NCS)](/firmware/nordic/)
 
+Pre-Build firmware can be found in [Releases](https://github.com/siderakb/pmw3360-pcb/releases/tag/fw_v0.1.0).
+
 ## License
 
 - KiCad Files (e.g. schematics, PCBs, footprints and symbols): [MIT](/LICENSE).

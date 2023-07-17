@@ -1,0 +1,33 @@
+{
+    "manufacturer": "SideraKB",
+    "url": "https://github.com/siderakb/pmw3360-pcb",
+    "maintainer": "ZiTe",
+    "keyboard_name": "PMW3360-RP2040",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": false
+    },
+    "usb": {
+        "vid": "0x5A69",
+        "pid": "0x3360",
+        "device_version": "1.0.0"
+    },
+    "matrix_pins": {
+        "cols": ["GP8"],
+        "rows": ["GP9"]
+    },
+    "diode_direction": "COL2ROW",
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0 }
+            ]
+        }
+    }
+}
