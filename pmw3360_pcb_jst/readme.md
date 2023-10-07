@@ -1,6 +1,6 @@
 # PMW3360 PCB JST GH Connector
 
-- J1: JST GH 1.25mm connector (SM08B-GHS-TB(LF)(SN)).
+- `J1`: JST GH 1.25mm connector (SM08B-GHS-TB(LF)(SN)).
 - Mounting holes: 4x M2 (∅2.2mm).
 
 ## PCB Characteristics

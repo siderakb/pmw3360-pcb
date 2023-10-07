@@ -1,6 +1,6 @@
 # PMW3360 PCB FFC/FPC Connector
 
-- J1: 0.5mm FFC/FPC connector.
+- `J1`: 0.5mm FFC/FPC connector.
 - Mounting holes: 4x M2 (∅2.2mm).
 
 ## PCB Characteristics

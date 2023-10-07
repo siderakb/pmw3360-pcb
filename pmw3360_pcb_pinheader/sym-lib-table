@@ -1,3 +1,4 @@
 (sym_lib_table
+  (version 7)
   (lib (name "PMW3360_PCB")(type "KiCad")(uri "${KIPRJMOD}/../pmw3360_pcb.kicad_sym")(options "")(descr ""))
 )

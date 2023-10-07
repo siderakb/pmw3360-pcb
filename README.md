@@ -6,59 +6,77 @@
 
 [PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board, can be operated with either a 1.8V or 3.3V voltage level.
 
-[Demo video (Rev 2.1)](https://youtu.be/orrze81mV_8?t=312)
+[Demo video 1](https://youtu.be/orrze81mV_8?t=312), [Demo video 2](https://youtu.be/CSA7Ih7nAls?si=umx-Psb8-lRDeviu)
 
 > EDA: KiCad 7.
 
 ## PCB
 
-Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fsiderakb%2Fpmw3360-pcb%2Ftree%2Fmain%2Fpmw3360_pcb_ffc), powered by [KiCanvas](https://kicanvas.org/).
+Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fsiderakb%2Fpmw3360-pcb%2Ftree%2Fmain%2Fpmw3360_pcb_pinheader), powered by [KiCanvas](https://github.com/theacodes/kicanvas).
 
-3 connector editions are available:
-- 2.54mm pin header: [`pmw3360_pcb_pinheader/`](/pmw3360_pcb_pinheader/)
-- JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
-- 0.5mm FFC/FPC: [`pmw3360_pcb_ffc/`](/pmw3360_pcb_ffc/)
-
-![Schematic](https://i.imgur.com/Yu6TUAT.png)
+![Schematic](https://i.imgur.com/PXqMESW.jpg)
 
 ### BOM
 
-| Ref  | Value          | Footprint              |
-| ---- | -------------- | ---------------------- |
-| C1   | 4.7uF/10V      | SMD 0603 (1608 Metric) |
-| C2   | 100nF          | SMD 0603 (1608 Metric) |
-| C3   | 1uF            | SMD 0603 (1608 Metric) |
-| C4   | 4.7uF          | SMD 0603 (1608 Metric) |
-| R1\* | *DNI* or 10k   | SMD 0603 (1608 Metric) |
-| R2   | 10k            | SMD 0603 (1608 Metric) |
-| R3   | 39R            | SMD 0603 (1608 Metric) |
-| R4\* | 28k            | SMD 0603 (1608 Metric) |
-| R5\* | 56.2k          | SMD 0603 (1608 Metric) |
-| U1   | PMW3360DM-T2QU | PMW3360DM-T2QU 16 Pin  |
-| U2\* | TPS73601DBV    | SOT-23-5               |
+| Ref  | Value         | Footprint             |
+| ---- | ------------- | --------------------- |
+| C1   | 4.7uF/10V     | SMD 0603              |
+| C2   | 100nF         | SMD 0603              |
+| C3   | 1uF           | SMD 0603              |
+| C4\* | 1uF           | SMD 0603              |
+| C5\* | *DNI*         | SMD 0603              |
+| R1\* | *DNI* or 10k  | SMD 0603              |
+| R2   | 10k           | SMD 0603              |
+| R3   | 39R           | SMD 0603              |
+| R4\* | *DNI*         | SMD 0603              |
+| U1   | PMW3360       | PMW3360DM-T2QU 16 Pin |
+| U2\* | TLV74318PDBVR | SOT-23-5              |
+| J1\* | 8 Pin         |                       |
 
-- R1 is optional/additional RESET pull up resistor, RESET pin of PMW3360 has a built in weak pull up circuit.
-- Adjust the VDD voltage with the value of R4 and R5. In the above case, VDD is set to 1.8V.
-- U2 LDO can be replace by RT9193-18GB. To make replacement, change C4 to 1uF, change R5 to a 22nF or larger ceramic capacitor, and don't install R4.
+- *DNI*: don't install.
+- SMD 0603 aka 1608 Metric.
+- PMW3360 needs to be used with LM19-LSI lens.
+- `R1` is optional/additional RESET pull up resistor, RESET pin of PMW3360 has a built in weak pull up circuit.
+- `J1` connector have the following options:
+    - 2.54mm pin header: [`pmw3360_pcb_pinheader/`](/pmw3360_pcb_pinheader/)
+    - JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
+    - 0.5mm FFC/FPC: [`pmw3360_pcb_ffc/`](/pmw3360_pcb_ffc/)
+- `U2` LDO regulator have the following options:
+
+|  Ref  | Default       | Alt.           | Alt.        |
+| :---: | ------------- | -------------- | ----------- |
+|  U2   | TLV74318PDBVR | RT9193-18GB    | TPS73601DBV |
+|  C4   | 1uF           | 1uF            | 4.7uF       |
+|  C5   | *DNI*         | 22nF or larger | 56.2k**Ω**  |
+|  R4   | *DNI*         | *DNI*          | 28kΩ        |
+| Note  | Fixed 1.8V    | Fixed 1.8V     | Adj. 1.8V   |
 
 ## Power
 
-If you want to use it with a 3.3V MCU, please connect VIN to the 3.3V power supply. Then, solder the 1 and 2 pads of JP1 together to set **VIO = VIN = 3.3V**.
+### Voltage-Level Config
 
-For 1.8V MCU, please connect VIN to 2.0\~5.5V, solder and connect the 2 and 3 pads of JP1.
+3 configs available:
 
-### Voltage Range
+|          |   3.3V    |    1.8 with LDO     |         1.8V without LDO          |
+| -------- | :-------: | :-----------------: | :-------------------------------: |
+| VIN Typ. |   3.3V    | (VDD + 0.2V) ~ 5.5V |               1.8V                |
+| VIN Max. |   3.6V    |        5.5V         |               2.1V                |
+| JP1      | `[1-2 3]` |      `[1 2-3]`      |             `[1-2-3]`             |
+| Note     |           |                     | `U2`, `R4`, `C3~5` can be omitted |
 
-- **VIN**: 2.0\~5.5V. Must be same or greater then VDD+0.2V, depends on LDO specs and JP1 config.
-- **VDD**: 1.8\~2.1V, typical 1.9V.
-- **VIO**: 1.8\~3.6V, typical 1.9V. Must be same or greater than VDD.
+### Jumper
 
-### Jumper Config
+| JP1 Config |                     | Description                  |
+| :--------: | ------------------- | ---------------------------- |
+| `[1-2 3]`  | 2 and 1 close, 3 NC | VIO = VIN                    |
+| `[1 2-3]`  | 2 and 3 close, 1 NC | VIO = VDD (i.e. LDO output)  |
+| `[1-2-3]`  | 1, 2 and 3 close    | VIO = VDD = VIN (LDO bypass) |
 
-| JP1 Config          | Description                 |
-| ------------------- | --------------------------- |
-| 2 and 1 close, 3 NC | VIO = VIN                   |
-| 2 and 3 close, 1 NC | VIO = VDD (i.e. LDO output) |
+### Operating Voltage Range
+
+- **VDD**: 1.8 ~ 2.1V (i.e. LDO Vout)
+- **VIO**: VDD ~ 3.6V (i.e. VDDIO)
+- **VIN**: Depends on [Voltage-Level config](#voltage-level-config)
 
 ## Firmware Examples
 

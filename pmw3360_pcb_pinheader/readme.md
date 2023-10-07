@@ -1,10 +1,12 @@
-# PMW3360 PCB PinHeader
+# PMW3360 PCB Pin Header
 
 |                Front                 |                 Back                 |                Layers                |
 | :----------------------------------: | :----------------------------------: | :----------------------------------: |
-| ![](https://i.imgur.com/uusnHoE.jpg) | ![](https://i.imgur.com/l4hXSjw.jpg) | ![](https://i.imgur.com/LGAlpwE.png) |
+| ![](https://i.imgur.com/VEpilMU.jpg) | ![](https://i.imgur.com/O1CKSMO.jpg) | ![](https://i.imgur.com/jaK5cri.png) |
 
-- J1: 2.54mm pin header connector.
+Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fsiderakb%2Fpmw3360-pcb%2Ftree%2Fmain%2Fpmw3360_pcb_pinheader), powered by [KiCanvas](https://github.com/theacodes/kicanvas).
+
+- `J1`: 2.54mm pin header connector.
 - Mounting holes: 4x M3 (∅3.2mm).
 
 ## PCB Characteristics
@@ -18,6 +20,12 @@
 - Edge card connectors: No
 
 ## Changelog
+
+### [P.1.0] - 2023-10-07
+
+- Changed LDO from TPS73601DBV to TLV74318PDBVR.
+- Added PCBA info.
+- Update PCB silkscreen.
 
 ### [P.0.0] - 2023-06-29
 
