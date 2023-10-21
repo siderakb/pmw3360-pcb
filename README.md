@@ -25,22 +25,22 @@ Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithu
 | C3   | 1uF           | SMD 0603              |
 | C4\* | 1uF           | SMD 0603              |
 | C5\* | *DNI*         | SMD 0603              |
-| R1\* | *DNI* or 10k  | SMD 0603              |
-| R2   | 10k           | SMD 0603              |
-| R3   | 39R           | SMD 0603              |
+| R1\* | *DNI* or 10kΩ | SMD 0603              |
+| R2   | 10kΩ          | SMD 0603              |
+| R3   | 39Ω           | SMD 0603              |
 | R4\* | *DNI*         | SMD 0603              |
 | U1   | PMW3360       | PMW3360DM-T2QU 16 Pin |
 | U2\* | TLV74318PDBVR | SOT-23-5              |
 | J1\* | 8 Pin         |                       |
 
 - *DNI*: don't install.
-- SMD 0603 aka 1608 Metric.
+- SMD 0603 (Imperial) aka 1608 Metric.
 - PMW3360 needs to be used with LM19-LSI lens.
 - `R1` is optional/additional RESET pull up resistor, RESET pin of PMW3360 has a built in weak pull up circuit.
 - `J1` connector have the following options:
     - 2.54mm pin header: [`pmw3360_pcb_pinheader/`](/pmw3360_pcb_pinheader/)
-    - JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
     - 0.5mm FFC/FPC: [`pmw3360_pcb_ffc/`](/pmw3360_pcb_ffc/)
+    - JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
 - `U2` LDO regulator have the following options:
 
 |  Ref  | Default       | Alt.           | Alt.        |
@@ -50,6 +50,13 @@ Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithu
 |  C5   | *DNI*         | 22nF or larger | 56.2k**Ω**  |
 |  R4   | *DNI*         | *DNI*          | 28kΩ        |
 | Note  | Fixed 1.8V    | Fixed 1.8V     | Adj. 1.8V   |
+
+### PCB Dimensions & Characteristics
+
+Please refer to:
+- 2.54mm pin header: [`pmw3360_pcb_pinheader/`](/pmw3360_pcb_pinheader/)
+- 0.5mm FFC/FPC: [`pmw3360_pcb_ffc/`](/pmw3360_pcb_ffc/)
+- JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
 
 ## Power
 
