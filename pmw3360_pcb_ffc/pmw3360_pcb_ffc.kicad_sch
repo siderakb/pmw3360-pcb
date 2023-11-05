@@ -9,7 +9,7 @@
     (date "2023-06-29")
     (rev "F.0")
     (company "SideraKB")
-    (comment 1 "MIT License (Open Source Hardware)")
+    (comment 1 "Open Source Hardware, CERN-OHL-P v2")
     (comment 2 "PMW3360DM-T2QU optical mouse sensor breakout board")
     (comment 3 "FFC/FPC Connector")
   )

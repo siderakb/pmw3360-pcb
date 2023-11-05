@@ -1,5 +1,8 @@
 # PMW3360 PCB
 
+[![license](https://img.shields.io/badge/License-CERN--OHL--P_v2-limegreen)](https://github.com/siderakb/pmw3360-pcb/blob/main/LICENSE-CERN-OHL-P)
+[![kicad](https://img.shields.io/badge/KiCad-v7-orange)](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fsiderakb%2Fpmw3360-pcb%2Ftree%2Fmain%2Fpmw3360_pcb_pinheader)
+
 | 2.54mm Pin Header                                                                                     | 0.5mm FFC/FPC                                                                                         |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | <a href="https://i.imgur.com/dnOzjEC.jpg"><img src="https://i.imgur.com/dnOzjEC.jpg" width="300"></a> | <a href="https://i.imgur.com/n6hp9wy.jpg"><img src="https://i.imgur.com/n6hp9wy.jpg" width="300"></a> |
@@ -7,8 +10,6 @@
 [PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board, can be operated with either a 1.8V or 3.3V voltage level.
 
 [Demo video 1](https://youtu.be/orrze81mV_8?t=312), [Demo video 2](https://youtu.be/CSA7Ih7nAls?si=umx-Psb8-lRDeviu)
-
-> EDA: KiCad 7.
 
 ## PCB
 
@@ -96,6 +97,6 @@ Pre-Build firmware can be found in [Releases](https://github.com/siderakb/pmw336
 
 ## License
 
-- KiCad Files (e.g. schematics, PCBs, footprints and symbols): [MIT](/LICENSE).
-- `firmware/qmk/`: [GPL v2](/LICENSE_QMK).
-- `firmware/nordic/`: [Nordic-5-Clause](/LICENSE_Nordic).
+- KiCad files (e.g. schematics, PCBs, footprints and symbols): [CERN-OHL-P v2](/LICENSE-CERN-OHL-P).
+- `firmware/qmk/`: [GPL v2](/LICENSE-QMK).
+- `firmware/nordic/`: [Nordic-5-Clause](/LICENSE-Nordic).

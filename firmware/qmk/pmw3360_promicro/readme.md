@@ -29,5 +29,5 @@ qmk compile -kb pmw3360_promicro -km default
 | RESET       | --        | --         |
 
 - "--" means do not connect.
-- JP1: 2 and 1 close, 3 NC.
+- 3.3V config.
 - For 5V Pro Micro, voltage-level shifter is required.
