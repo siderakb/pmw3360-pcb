@@ -15,6 +15,11 @@
 
 ## Changelog
 
+### [J.1.0] - 2023-12-15
+
+- Changed LDO from TPS73601DBV to TLV74318PDBVR.
+- Changed R5 to C5.
+
 ### [J.0.0] - 2023-06-29
 
 - Update PWM3360 footprint (reduce the size of the pads).

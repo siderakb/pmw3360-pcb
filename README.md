@@ -59,6 +59,8 @@ Please refer to:
 - 0.5mm FFC/FPC: [`pmw3360_pcb_ffc/`](/pmw3360_pcb_ffc/)
 - JST GH 1.25mm: [`pmw3360_pcb_jst/`](/pmw3360_pcb_jst/)
 
+> PCB sizes vary among different connector editions.
+
 ## Power
 
 ### Voltage-Level Config

@@ -15,6 +15,11 @@
 
 ## Changelog
 
+### [F.1.0] - 2023-12-15
+
+- Changed LDO from TPS73601DBV to TLV74318PDBVR.
+- Changed R5 to C5.
+
 ### [F.0.0] - 2023-06-29
 
 - Reduce the board size to 27 x 22.5 mm.
