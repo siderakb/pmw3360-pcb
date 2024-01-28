@@ -1,2 +1,5 @@
+*.swp
+*~
+
 # NCS output
-[Bb]uild/
+[Bb]uild*/

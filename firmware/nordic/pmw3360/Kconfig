@@ -1,0 +1,10 @@
+
+source "Kconfig.zephyr"
+
+menu "PMW3360"
+
+config PMW3360_MOTION 
+	bool "Enable PMW3360 motion pin interrupt trigger"
+	default n
+
+endmenu

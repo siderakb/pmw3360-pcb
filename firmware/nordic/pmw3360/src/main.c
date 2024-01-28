@@ -6,20 +6,32 @@
 
 /* Ref: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/2.1.2/nrf/drivers/pmw3360.html. */
 
-/* Uncommented to enable sensor trigger. */
-// #define ENABLE_INTERRUPT
-
 #include <stdio.h>
 #include <zephyr/zephyr.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/sensor.h>
 
-static struct sensor_trigger pmw3360_trigger;
+const struct device *pmw3360 = DEVICE_DT_GET_ONE(pixart_pmw3360);
 
-static int process_pmw3360(const struct device *dev)
+static struct sensor_trigger pmw3360_trigger = {
+    .type = SENSOR_TRIG_DATA_READY,
+    .chan = SENSOR_CHAN_ALL,
+};
+
+/**
+ * @brief Read X/Y value from PMW3360.
+ *
+ * @param dev PMW3360
+ * @param x X axis value.
+ * @param y Y axis value.
+ * @return 0 if successful, otherwise error code.
+ */
+static int read_pmw3360(const struct device *dev, int *x, int *y)
 {
-  struct sensor_value x;
-  struct sensor_value y;
+  *x = 0;
+  *y = 0;
+  struct sensor_value sen_x;
+  struct sensor_value sen_y;
   int ret;
 
   ret = sensor_sample_fetch_chan(dev, SENSOR_CHAN_ALL);
@@ -29,73 +41,81 @@ static int process_pmw3360(const struct device *dev)
     return ret;
   }
 
-  ret = sensor_channel_get(dev, SENSOR_CHAN_POS_DX, &x);
+  ret = sensor_channel_get(dev, SENSOR_CHAN_POS_DX, &sen_x);
   if (ret < 0)
   {
     printf("Could not get value X (%d)\n", ret);
     return ret;
   }
 
-  ret = sensor_channel_get(dev, SENSOR_CHAN_POS_DY, &y);
+  ret = sensor_channel_get(dev, SENSOR_CHAN_POS_DY, &sen_y);
   if (ret < 0)
   {
     printf("Could not get value Y (%d)\n", ret);
     return ret;
   }
 
-  printf("X: %f, Y: %f \n",
-         sensor_value_to_double(&x),
-         sensor_value_to_double(&y));
-
+  *x = sen_x.val1;
+  *y = sen_y.val1;
   return 0; /* Successful. */
 }
 
-static void handle_pmw3360(const struct device *dev, const struct sensor_trigger *trig)
+static void pmw3360_trg_handler(const struct device *dev, const struct sensor_trigger *trig)
 {
-  int rec = process_pmw3360(dev);
+  int x;
+  int y;
+  int rec = read_pmw3360(dev, &x, &y);
   if (rec != 0)
   {
     printf("Trigger fail (%d)", rec);
     (void)sensor_trigger_set(dev, trig, NULL);
     return;
   }
+
+  printf("X: %5d, Y: %5d \n", x, y);
 }
 
 void main(void)
 {
-  const struct device *dev = DEVICE_DT_GET_ONE(pixart_pmw3360);
-  if (!device_is_ready(dev))
+  if (!device_is_ready(pmw3360))
   {
-    printk("sensor: device %s not ready.\n", dev->name);
+    printk("sensor: device %s not ready.\n", pmw3360->name);
     return;
   }
 
+  printk("PMW3360 is ready.\n");
   k_sleep(K_MSEC(1500));
 
-#if defined(ENABLE_INTERRUPT)
-  /* Setup interrupt triger. */
-  pmw3360_trigger = (struct sensor_trigger){
-      .type = SENSOR_TRIG_DATA_READY,
-      .chan = SENSOR_CHAN_ALL,
-  };
+#if defined(CONFIG_PMW3360_MOTION)
 
-  int rec = sensor_trigger_set(dev, &pmw3360_trigger, handle_pmw3360);
+  int rec = sensor_trigger_set(pmw3360, &pmw3360_trigger, pmw3360_trg_handler);
   if (rec != 0)
   {
     printf("Cannot config trigger (%d)", rec);
     return;
   }
-#else
+
   while (1)
   {
-    int ret = process_pmw3360(dev);
+    k_sleep(K_MSEC(1000));
+  }
+
+#else
+
+  while (1)
+  {
+    int x;
+    int y;
+    int ret = read_pmw3360(pmw3360, &x, &y);
     if (ret != 0)
     {
       printf("Cannot get value (%d)", ret);
-      return;
+      continue;
     }
 
-    k_sleep(K_MSEC(500));
+    printf("X: %6d, Y: %6d \n", x, y);
+    k_sleep(K_MSEC(500)); /* Delay */
   }
+
 #endif
 }
