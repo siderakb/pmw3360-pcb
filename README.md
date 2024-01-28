@@ -7,7 +7,8 @@
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | <a href="https://i.imgur.com/dnOzjEC.jpg"><img src="https://i.imgur.com/dnOzjEC.jpg" width="300"></a> | <a href="https://i.imgur.com/n6hp9wy.jpg"><img src="https://i.imgur.com/n6hp9wy.jpg" width="300"></a> |
 
-[PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board, can be operated with either a 1.8V or 3.3V voltage level.
+[PixArt PMW3360DM-T2QU](https://www.pixart.com/products-detail/10/PMW3360DM-T2QU) optical mouse sensor breakout board, can be operated with either a 1.8V or 3.3V voltage level.  
+Also look at [PMW3610 PCB](https://github.com/siderakb/pmw3610-pcb).
 
 [Demo video 1](https://youtu.be/orrze81mV_8?t=312), [Demo video 2](https://youtu.be/CSA7Ih7nAls?si=umx-Psb8-lRDeviu)
 
